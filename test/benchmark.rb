@@ -8,10 +8,11 @@ require "kramdown-parser-gfm"
 require "redcarpet"
 require "benchmark"
 
-small = File.read("test/benchmark/small.md").freeze
-large = File.read("test/benchmark/large.md").freeze
+Dir.glob("test/benchmark/*.md").each do |path|
+  input = File.read(path).freeze
+  size = File.basename(path, ".md")
 
-[small, large].each do |input|
+  puts "=== Benchmarking with #{size} input ===\n\n"
   printf("input size = %<bytes>d bytes\n\n", { bytes: input.bytesize })
 
   Benchmark.ips do |x|
@@ -33,7 +34,7 @@ large = File.read("test/benchmark/large.md").freeze
     end
 
     x.report("Commonmarker::Node.to_html") do
-      Commonmarker.parse(large).to_html
+      Commonmarker.parse(input).to_html
     end
 
     x.report("Kramdown::Document#to_html") do
