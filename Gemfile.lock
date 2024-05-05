@@ -5,6 +5,7 @@ GEM
     benchmark-ips (2.13.0)
     commonmarker (1.1.2-aarch64-linux)
     commonmarker (1.1.2-arm64-darwin)
+    commonmarker (1.1.2-x64-mingw-ucrt)
     commonmarker (1.1.2-x86_64-darwin)
     commonmarker (1.1.2-x86_64-linux)
     json (2.7.2)
@@ -59,6 +60,7 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin
+  x64-mingw-ucrt
   x86_64-darwin
   x86_64-linux
 
