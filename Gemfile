@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 gem "benchmark-ips"
 gem "rake"
+gem "rubocop"
+gem "standard"
 
 # Markdown parsers
 gem "commonmarker"

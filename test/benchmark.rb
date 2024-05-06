@@ -13,7 +13,7 @@ Dir.glob("test/benchmark/*.md").each do |path|
   size = File.basename(path, ".md")
 
   puts "=== Benchmarking with #{size} input ===\n\n"
-  printf("input size = %<bytes>d bytes\n\n", { bytes: input.bytesize })
+  printf("input size = %<bytes>d bytes\n\n", {bytes: input.bytesize})
 
   Benchmark.ips do |x|
     x.report("Markly.render_html") do
