@@ -33,12 +33,16 @@ Dir.glob("test/benchmark/*.md").each do |path|
       Commonmarker.to_html(input)
     end
 
-    x.report("Commonmarker::Node.to_html") do
+    x.report("Commonmarker::Node#to_html") do
       Commonmarker.parse(input).to_html
     end
 
     x.report("Kramdown::Document#to_html") do
       Kramdown::Document.new(input, input: "GFM").to_html
+    end
+
+    x.report("RDiscount#.to_html") do
+      RDiscount.new(input).to_html
     end
 
     x.compare!
