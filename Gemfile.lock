@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    benchmark-ips (2.13.0)
+    benchmark-ips (2.14.0)
     commonmarker (1.1.5-aarch64-linux)
     commonmarker (1.1.5-arm64-darwin)
     commonmarker (1.1.5-x64-mingw-ucrt)
