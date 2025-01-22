@@ -3,11 +3,11 @@ GEM
   specs:
     ast (2.4.2)
     benchmark-ips (2.14.0)
-    commonmarker (1.1.5-aarch64-linux)
-    commonmarker (1.1.5-arm64-darwin)
-    commonmarker (1.1.5-x64-mingw-ucrt)
-    commonmarker (1.1.5-x86_64-darwin)
-    commonmarker (1.1.5-x86_64-linux)
+    commonmarker (2.0.3-aarch64-linux)
+    commonmarker (2.0.3-arm64-darwin)
+    commonmarker (2.0.3-x64-mingw-ucrt)
+    commonmarker (2.0.3-x86_64-darwin)
+    commonmarker (2.0.3-x86_64-linux)
     json (2.7.2)
     kramdown (2.4.0)
       rexml
