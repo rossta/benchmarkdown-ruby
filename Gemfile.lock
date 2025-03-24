@@ -15,7 +15,7 @@ GEM
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
-    markly (0.10.0)
+    markly (0.13.0)
     parallel (1.26.3)
     parser (3.3.7.1)
       ast (~> 2.4.1)
